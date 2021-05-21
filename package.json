@@ -1,0 +1,25 @@
+{
+  "name": "crox-referral",
+  "version": "1.0.0",
+  "description": "CroxSwap Referral Contract",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/croxswap/crox-referral.git"
+  },
+  "keywords": [
+    "solidity"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/croxswap/crox-referral/issues"
+  },
+  "homepage": "https://github.com/croxswap/crox-referral#readme"
+}
