@@ -6,8 +6,8 @@
 pragma solidity 0.6.6;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./library/IBEP20.sol";
-import "./library/SafeBEP20.sol";
+import "./libraries/IBEP20.sol";
+import "./libraries/SafeBEP20.sol";
 import "./interface/ICroxReferral.sol";
 
 contract CroxReferral is ICroxReferral, Ownable {
