@@ -28,6 +28,15 @@ module.exports = {
       gasPrice: 240000000000,
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
     },
+    testnet: {
+      provider: () =>
+        new HDWalletProvider(
+          process.env.MNEMONIC,
+          `https://data-seed-prebsc-1-s1.binance.org:8545`
+        ),
+      network_id: 97,
+      skipDryRun: true,
+    },
     mainnet: {
       provider: () =>
         new HDWalletProvider(process.env.MNEMONIC, process.env.MAINNET, 0),
@@ -58,5 +67,6 @@ module.exports = {
   plugins: ["truffle-plugin-verify"],
   api_keys: {
     etherscan: process.env.ETHERAPI, // Add  API key
+    bscscan: process.env.BSCAPI,
   },
 };
